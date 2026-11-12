@@ -1,7 +1,7 @@
 {
   "source_url": "https://raw.githubusercontent.com/theecanmole/nzu/master/spotprices.csv",
   "licence": "ODC-PDDL (public domain)",
-  "fetched_at_utc": "2026-11-12T12:05:05+00:00",
+  "fetched_at_utc": "2026-11-12T21:47:09+00:00",
   "raw_sha256": "6b2529494d3cb8b8fec837471fd11f2c72d4b05ee6632aaddfa69c1127a2dd49",
   "cleaning": {
     "raw_rows": 2326,
