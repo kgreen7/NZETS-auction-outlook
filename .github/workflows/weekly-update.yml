@@ -1,0 +1,101 @@
+# Weekly update of the NZ ETS auction outlook (kapiticlimate.com/insights). See MAINTAINING.md.
+#
+# Runs every Monday 19:00 UTC (Tuesday morning NZ), by hand (Actions tab > "Weekly update" > Run workflow), and
+# whenever data/curated/ changes on main (a new auction result or notice).
+#
+# 1. tests  2. publish (prices, auction tables, checks, JSON, log)  3. commit the refreshed files to this repo
+# 4. OPTIONAL: copy the JSON into the website repo (Vercel redeploys). Off until both of these exist:
+#      - repository secret  SITE_REPO_TOKEN  (fine-grained token: kgreen7/kapiti-climate only, Contents read & write)
+#      - repository variable PUSH_TO_SITE = true
+# Secrets are never passed to workflows triggered from forks, and this workflow doesn't run on pull requests.
+# If a check fails the job stops before anything is committed or published, and GitHub emails the repo owner.
+
+name: Weekly update
+
+on:
+  schedule:
+    - cron: "0 19 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["data/curated/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # Latest main, not the commit that triggered the run: queued runs must start from what's there now
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install (locked versions)
+        run: uv sync --locked --group test
+
+      - name: Tests
+        run: uv run --group test pytest -q
+
+      - name: Publish (refresh prices, rebuild auction tables, check, export)
+        run: uv run python -m auction_outlook.publish
+
+      - name: Commit refreshed data and outputs
+        run: |
+          git config user.name "nzets-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/ outputs/
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "Weekly auction outlook update"
+          # If another run (or you) pushed meanwhile: replay this commit on top, keeping this run's freshly
+          # computed files where both touched the same file, then push. Up to 3 tries.
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 10
+          done
+          echo "Could not push after 3 attempts"
+          exit 1
+
+      - name: Copy to the website repo (Vercel redeploys)
+        if: vars.PUSH_TO_SITE == 'true'
+        env:
+          SITE_TOKEN: ${{ secrets.SITE_REPO_TOKEN }}
+        run: |
+          git clone --depth 1 "https://x-access-token:${SITE_TOKEN}@github.com/kgreen7/kapiti-climate.git" site
+          mkdir -p site/public/data/insights
+          cp outputs/auction-outlook.json site/public/data/insights/auction-outlook.json
+          cd site
+          git config user.name "nzets-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/insights/auction-outlook.json
+          if git diff --cached --quiet; then
+            echo "Website data unchanged."
+            exit 0
+          fi
+          git commit -m "Update auction outlook data"
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying"
+            sleep 10
+          done
+          echo "Could not push to the website repo after 3 attempts"
+          exit 1

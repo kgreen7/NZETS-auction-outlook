@@ -1,0 +1,1688 @@
+{
+ "schema_version": 1,
+ "model_version": "auction-outlook 1.0 (2026-11-12): 3-year empirical price range x reserve-clearing rate",
+ "price_as_of": "2026-10-30",
+ "latest_price": 48.0,
+ "model": {
+  "name": "Empirical 3-year price ranges x reserve-clearing rate",
+  "price_band": "Range of actual k-week NZU price moves over the last 3 years, centred on today's price",
+  "reserve_clear_rate": 0.688,
+  "reserve_clear_basis": "Share of past auctions that sold units when the price was above the floor (Beta(1,1) prior, so (cleared + 1) / (auctions + 2))"
+ },
+ "next_auctions": [
+  {
+   "name": "December 2026",
+   "date": "2026-12-01",
+   "floor": 71.0,
+   "weeks_ahead": 4,
+   "p_above_floor": 0.0,
+   "p_clear": 0.0,
+   "p_bids_clear_reserve": 0.688,
+   "price_p10": 43.1,
+   "price_p50": 48.0,
+   "price_p90": 53.46
+  },
+  {
+   "name": "March 2027",
+   "date": "2027-03-12",
+   "floor": 75.0,
+   "weeks_ahead": 19,
+   "p_above_floor": 0.021,
+   "p_clear": 0.014,
+   "p_bids_clear_reserve": 0.688,
+   "price_p10": 36.52,
+   "price_p50": 48.0,
+   "price_p90": 63.09
+  }
+ ],
+ "fan": [
+  {
+   "date": "2026-10-30",
+   "p10": 48.0,
+   "p25": 48.0,
+   "p50": 48.0,
+   "p75": 48.0,
+   "p90": 48.0
+  },
+  {
+   "date": "2026-11-06",
+   "p10": 45.83,
+   "p25": 47.25,
+   "p50": 48.0,
+   "p75": 48.77,
+   "p90": 50.28
+  },
+  {
+   "date": "2026-11-13",
+   "p10": 44.58,
+   "p25": 46.61,
+   "p50": 48.0,
+   "p75": 49.43,
+   "p90": 51.68
+  },
+  {
+   "date": "2026-11-20",
+   "p10": 43.75,
+   "p25": 46.56,
+   "p50": 48.0,
+   "p75": 49.49,
+   "p90": 52.66
+  },
+  {
+   "date": "2026-11-27",
+   "p10": 43.1,
+   "p25": 46.18,
+   "p50": 48.0,
+   "p75": 49.9,
+   "p90": 53.46
+  },
+  {
+   "date": "2026-12-04",
+   "p10": 42.06,
+   "p25": 45.94,
+   "p50": 48.0,
+   "p75": 50.15,
+   "p90": 54.78
+  },
+  {
+   "date": "2026-12-11",
+   "p10": 41.72,
+   "p25": 45.52,
+   "p50": 48.0,
+   "p75": 50.62,
+   "p90": 55.23
+  },
+  {
+   "date": "2026-12-18",
+   "p10": 40.91,
+   "p25": 45.28,
+   "p50": 48.0,
+   "p75": 50.89,
+   "p90": 56.31
+  },
+  {
+   "date": "2026-12-25",
+   "p10": 40.42,
+   "p25": 45.26,
+   "p50": 48.0,
+   "p75": 50.91,
+   "p90": 57.0
+  },
+  {
+   "date": "2027-01-01",
+   "p10": 39.96,
+   "p25": 44.57,
+   "p50": 48.0,
+   "p75": 51.69,
+   "p90": 57.66
+  },
+  {
+   "date": "2027-01-08",
+   "p10": 39.55,
+   "p25": 44.31,
+   "p50": 48.0,
+   "p75": 52.0,
+   "p90": 58.25
+  },
+  {
+   "date": "2027-01-15",
+   "p10": 38.73,
+   "p25": 44.3,
+   "p50": 48.0,
+   "p75": 52.01,
+   "p90": 59.49
+  },
+  {
+   "date": "2027-01-22",
+   "p10": 38.4,
+   "p25": 43.78,
+   "p50": 48.0,
+   "p75": 52.63,
+   "p90": 60.0
+  },
+  {
+   "date": "2027-01-29",
+   "p10": 37.95,
+   "p25": 43.41,
+   "p50": 48.0,
+   "p75": 53.07,
+   "p90": 60.71
+  },
+  {
+   "date": "2027-02-05",
+   "p10": 37.37,
+   "p25": 43.23,
+   "p50": 48.0,
+   "p75": 53.29,
+   "p90": 61.65
+  },
+  {
+   "date": "2027-02-12",
+   "p10": 37.34,
+   "p25": 42.73,
+   "p50": 48.0,
+   "p75": 53.92,
+   "p90": 61.7
+  },
+  {
+   "date": "2027-02-19",
+   "p10": 37.17,
+   "p25": 42.28,
+   "p50": 48.0,
+   "p75": 54.49,
+   "p90": 61.99
+  },
+  {
+   "date": "2027-02-26",
+   "p10": 36.52,
+   "p25": 41.78,
+   "p50": 48.0,
+   "p75": 55.14,
+   "p90": 63.09
+  },
+  {
+   "date": "2027-03-05",
+   "p10": 36.22,
+   "p25": 41.42,
+   "p50": 48.0,
+   "p75": 55.63,
+   "p90": 63.61
+  },
+  {
+   "date": "2027-03-12",
+   "p10": 36.52,
+   "p25": 41.07,
+   "p50": 48.0,
+   "p75": 56.1,
+   "p90": 63.09
+  }
+ ],
+ "history": [
+  {
+   "date": "2021-01-01",
+   "price": 37.55
+  },
+  {
+   "date": "2021-01-08",
+   "price": 37.62
+  },
+  {
+   "date": "2021-01-15",
+   "price": 38.4
+  },
+  {
+   "date": "2021-01-22",
+   "price": 38.42
+  },
+  {
+   "date": "2021-01-29",
+   "price": 38.5
+  },
+  {
+   "date": "2021-02-05",
+   "price": 39.6
+  },
+  {
+   "date": "2021-02-12",
+   "price": 39.2
+  },
+  {
+   "date": "2021-02-19",
+   "price": 39.2
+  },
+  {
+   "date": "2021-02-26",
+   "price": 39.0
+  },
+  {
+   "date": "2021-03-05",
+   "price": 38.8
+  },
+  {
+   "date": "2021-03-12",
+   "price": 38.75
+  },
+  {
+   "date": "2021-03-19",
+   "price": 37.25
+  },
+  {
+   "date": "2021-03-26",
+   "price": 37.0
+  },
+  {
+   "date": "2021-04-02",
+   "price": 36.9
+  },
+  {
+   "date": "2021-04-09",
+   "price": 37.0
+  },
+  {
+   "date": "2021-04-16",
+   "price": 37.3
+  },
+  {
+   "date": "2021-04-23",
+   "price": 37.5
+  },
+  {
+   "date": "2021-04-30",
+   "price": 37.47
+  },
+  {
+   "date": "2021-05-07",
+   "price": 37.4
+  },
+  {
+   "date": "2021-05-14",
+   "price": 37.0
+  },
+  {
+   "date": "2021-05-21",
+   "price": 37.05
+  },
+  {
+   "date": "2021-05-28",
+   "price": 36.95
+  },
+  {
+   "date": "2021-06-04",
+   "price": 37.9
+  },
+  {
+   "date": "2021-06-11",
+   "price": 40.3
+  },
+  {
+   "date": "2021-06-18",
+   "price": 41.3
+  },
+  {
+   "date": "2021-06-25",
+   "price": 43.6
+  },
+  {
+   "date": "2021-07-02",
+   "price": 44.0
+  },
+  {
+   "date": "2021-07-09",
+   "price": 47.5
+  },
+  {
+   "date": "2021-07-16",
+   "price": 47.65
+  },
+  {
+   "date": "2021-07-23",
+   "price": 48.1
+  },
+  {
+   "date": "2021-07-30",
+   "price": 48.4
+  },
+  {
+   "date": "2021-08-06",
+   "price": 49.1
+  },
+  {
+   "date": "2021-08-13",
+   "price": 49.8
+  },
+  {
+   "date": "2021-08-20",
+   "price": 49.75
+  },
+  {
+   "date": "2021-08-27",
+   "price": 51.0
+  },
+  {
+   "date": "2021-09-03",
+   "price": 59.5
+  },
+  {
+   "date": "2021-09-10",
+   "price": 65.8
+  },
+  {
+   "date": "2021-09-17",
+   "price": 64.0
+  },
+  {
+   "date": "2021-09-24",
+   "price": 64.5
+  },
+  {
+   "date": "2021-10-01",
+   "price": 64.5
+  },
+  {
+   "date": "2021-10-08",
+   "price": 64.5
+  },
+  {
+   "date": "2021-10-15",
+   "price": 64.8
+  },
+  {
+   "date": "2021-10-22",
+   "price": 65.0
+  },
+  {
+   "date": "2021-10-29",
+   "price": 65.25
+  },
+  {
+   "date": "2021-11-05",
+   "price": 65.25
+  },
+  {
+   "date": "2021-11-12",
+   "price": 65.0
+  },
+  {
+   "date": "2021-11-19",
+   "price": 64.9
+  },
+  {
+   "date": "2021-11-26",
+   "price": 64.95
+  },
+  {
+   "date": "2021-12-03",
+   "price": 68.4
+  },
+  {
+   "date": "2021-12-10",
+   "price": 68.15
+  },
+  {
+   "date": "2021-12-17",
+   "price": 68.15
+  },
+  {
+   "date": "2021-12-24",
+   "price": 68.5
+  },
+  {
+   "date": "2021-12-31",
+   "price": 68.5
+  },
+  {
+   "date": "2022-01-07",
+   "price": 68.5
+  },
+  {
+   "date": "2022-01-14",
+   "price": 68.5
+  },
+  {
+   "date": "2022-01-21",
+   "price": 68.5
+  },
+  {
+   "date": "2022-01-28",
+   "price": 75.25
+  },
+  {
+   "date": "2022-02-04",
+   "price": 77.0
+  },
+  {
+   "date": "2022-02-11",
+   "price": 81.5
+  },
+  {
+   "date": "2022-02-18",
+   "price": 85.0
+  },
+  {
+   "date": "2022-02-25",
+   "price": 80.0
+  },
+  {
+   "date": "2022-03-04",
+   "price": 79.0
+  },
+  {
+   "date": "2022-03-11",
+   "price": 72.0
+  },
+  {
+   "date": "2022-03-18",
+   "price": 73.62
+  },
+  {
+   "date": "2022-03-25",
+   "price": 74.0
+  },
+  {
+   "date": "2022-04-01",
+   "price": 75.9
+  },
+  {
+   "date": "2022-04-08",
+   "price": 75.95
+  },
+  {
+   "date": "2022-04-15",
+   "price": 76.5
+  },
+  {
+   "date": "2022-04-22",
+   "price": 75.25
+  },
+  {
+   "date": "2022-04-29",
+   "price": 75.9
+  },
+  {
+   "date": "2022-05-06",
+   "price": 76.3
+  },
+  {
+   "date": "2022-05-13",
+   "price": 76.4
+  },
+  {
+   "date": "2022-05-20",
+   "price": 76.47
+  },
+  {
+   "date": "2022-05-27",
+   "price": 77.0
+  },
+  {
+   "date": "2022-06-03",
+   "price": 77.1
+  },
+  {
+   "date": "2022-06-10",
+   "price": 76.6
+  },
+  {
+   "date": "2022-06-17",
+   "price": 76.85
+  },
+  {
+   "date": "2022-06-24",
+   "price": 76.25
+  },
+  {
+   "date": "2022-07-01",
+   "price": 76.0
+  },
+  {
+   "date": "2022-07-08",
+   "price": 74.0
+  },
+  {
+   "date": "2022-07-15",
+   "price": 72.8
+  },
+  {
+   "date": "2022-07-22",
+   "price": 73.0
+  },
+  {
+   "date": "2022-07-29",
+   "price": 80.25
+  },
+  {
+   "date": "2022-08-05",
+   "price": 80.0
+  },
+  {
+   "date": "2022-08-12",
+   "price": 80.0
+  },
+  {
+   "date": "2022-08-19",
+   "price": 85.4
+  },
+  {
+   "date": "2022-08-26",
+   "price": 85.7
+  },
+  {
+   "date": "2022-09-02",
+   "price": 87.1
+  },
+  {
+   "date": "2022-09-09",
+   "price": 85.7
+  },
+  {
+   "date": "2022-09-16",
+   "price": 83.0
+  },
+  {
+   "date": "2022-09-23",
+   "price": 82.75
+  },
+  {
+   "date": "2022-09-30",
+   "price": 79.0
+  },
+  {
+   "date": "2022-10-07",
+   "price": 82.5
+  },
+  {
+   "date": "2022-10-14",
+   "price": 80.7
+  },
+  {
+   "date": "2022-10-21",
+   "price": 80.9
+  },
+  {
+   "date": "2022-10-28",
+   "price": 82.5
+  },
+  {
+   "date": "2022-11-04",
+   "price": 85.0
+  },
+  {
+   "date": "2022-11-11",
+   "price": 88.2
+  },
+  {
+   "date": "2022-11-18",
+   "price": 88.4
+  },
+  {
+   "date": "2022-11-25",
+   "price": 86.5
+  },
+  {
+   "date": "2022-12-02",
+   "price": 82.45
+  },
+  {
+   "date": "2022-12-09",
+   "price": 82.5
+  },
+  {
+   "date": "2022-12-16",
+   "price": 75.0
+  },
+  {
+   "date": "2022-12-23",
+   "price": 76.0
+  },
+  {
+   "date": "2022-12-30",
+   "price": 76.0
+  },
+  {
+   "date": "2023-01-06",
+   "price": 76.0
+  },
+  {
+   "date": "2023-01-13",
+   "price": 76.0
+  },
+  {
+   "date": "2023-01-20",
+   "price": 76.0
+  },
+  {
+   "date": "2023-01-27",
+   "price": 72.5
+  },
+  {
+   "date": "2023-02-03",
+   "price": 72.4
+  },
+  {
+   "date": "2023-02-10",
+   "price": 72.1
+  },
+  {
+   "date": "2023-02-17",
+   "price": 71.8
+  },
+  {
+   "date": "2023-02-24",
+   "price": 67.0
+  },
+  {
+   "date": "2023-03-03",
+   "price": 67.0
+  },
+  {
+   "date": "2023-03-10",
+   "price": 66.25
+  },
+  {
+   "date": "2023-03-17",
+   "price": 66.75
+  },
+  {
+   "date": "2023-03-24",
+   "price": 64.45
+  },
+  {
+   "date": "2023-03-31",
+   "price": 54.0
+  },
+  {
+   "date": "2023-04-07",
+   "price": 59.0
+  },
+  {
+   "date": "2023-04-14",
+   "price": 62.5
+  },
+  {
+   "date": "2023-04-21",
+   "price": 61.5
+  },
+  {
+   "date": "2023-04-28",
+   "price": 58.5
+  },
+  {
+   "date": "2023-05-05",
+   "price": 54.75
+  },
+  {
+   "date": "2023-05-12",
+   "price": 52.0
+  },
+  {
+   "date": "2023-05-19",
+   "price": 51.5
+  },
+  {
+   "date": "2023-05-26",
+   "price": 54.0
+  },
+  {
+   "date": "2023-06-02",
+   "price": 55.0
+  },
+  {
+   "date": "2023-06-09",
+   "price": 56.3
+  },
+  {
+   "date": "2023-06-16",
+   "price": 60.5
+  },
+  {
+   "date": "2023-06-23",
+   "price": 47.5
+  },
+  {
+   "date": "2023-06-30",
+   "price": 41.0
+  },
+  {
+   "date": "2023-07-07",
+   "price": 38.0
+  },
+  {
+   "date": "2023-07-14",
+   "price": 39.25
+  },
+  {
+   "date": "2023-07-21",
+   "price": 48.0
+  },
+  {
+   "date": "2023-07-28",
+   "price": 61.5
+  },
+  {
+   "date": "2023-08-04",
+   "price": 58.0
+  },
+  {
+   "date": "2023-08-11",
+   "price": 59.95
+  },
+  {
+   "date": "2023-08-18",
+   "price": 62.5
+  },
+  {
+   "date": "2023-08-25",
+   "price": 66.75
+  },
+  {
+   "date": "2023-09-01",
+   "price": 70.5
+  },
+  {
+   "date": "2023-09-08",
+   "price": 71.75
+  },
+  {
+   "date": "2023-09-15",
+   "price": 71.75
+  },
+  {
+   "date": "2023-09-22",
+   "price": 65.6
+  },
+  {
+   "date": "2023-09-29",
+   "price": 65.75
+  },
+  {
+   "date": "2023-10-06",
+   "price": 65.85
+  },
+  {
+   "date": "2023-10-13",
+   "price": 67.9
+  },
+  {
+   "date": "2023-10-20",
+   "price": 69.5
+  },
+  {
+   "date": "2023-10-27",
+   "price": 69.3
+  },
+  {
+   "date": "2023-11-03",
+   "price": 70.1
+  },
+  {
+   "date": "2023-11-10",
+   "price": 71.0
+  },
+  {
+   "date": "2023-11-17",
+   "price": 69.75
+  },
+  {
+   "date": "2023-11-24",
+   "price": 70.8
+  },
+  {
+   "date": "2023-12-01",
+   "price": 74.85
+  },
+  {
+   "date": "2023-12-08",
+   "price": 69.0
+  },
+  {
+   "date": "2023-12-15",
+   "price": 71.0
+  },
+  {
+   "date": "2023-12-22",
+   "price": 68.7
+  },
+  {
+   "date": "2023-12-29",
+   "price": 69.15
+  },
+  {
+   "date": "2024-01-05",
+   "price": 70.0
+  },
+  {
+   "date": "2024-01-12",
+   "price": 67.7
+  },
+  {
+   "date": "2024-01-19",
+   "price": 67.5
+  },
+  {
+   "date": "2024-01-26",
+   "price": 70.7
+  },
+  {
+   "date": "2024-02-02",
+   "price": 73.7
+  },
+  {
+   "date": "2024-02-09",
+   "price": 72.45
+  },
+  {
+   "date": "2024-02-16",
+   "price": 69.75
+  },
+  {
+   "date": "2024-02-23",
+   "price": 67.0
+  },
+  {
+   "date": "2024-03-01",
+   "price": 66.75
+  },
+  {
+   "date": "2024-03-08",
+   "price": 69.0
+  },
+  {
+   "date": "2024-03-15",
+   "price": 65.0
+  },
+  {
+   "date": "2024-03-22",
+   "price": 56.25
+  },
+  {
+   "date": "2024-03-29",
+   "price": 58.0
+  },
+  {
+   "date": "2024-04-05",
+   "price": 58.5
+  },
+  {
+   "date": "2024-04-12",
+   "price": 52.05
+  },
+  {
+   "date": "2024-04-19",
+   "price": 55.2
+  },
+  {
+   "date": "2024-04-26",
+   "price": 55.9
+  },
+  {
+   "date": "2024-05-03",
+   "price": 55.05
+  },
+  {
+   "date": "2024-05-10",
+   "price": 55.0
+  },
+  {
+   "date": "2024-05-17",
+   "price": 53.35
+  },
+  {
+   "date": "2024-05-24",
+   "price": 45.0
+  },
+  {
+   "date": "2024-05-31",
+   "price": 49.0
+  },
+  {
+   "date": "2024-06-07",
+   "price": 54.0
+  },
+  {
+   "date": "2024-06-14",
+   "price": 52.0
+  },
+  {
+   "date": "2024-06-21",
+   "price": 48.5
+  },
+  {
+   "date": "2024-06-28",
+   "price": 50.38
+  },
+  {
+   "date": "2024-07-05",
+   "price": 51.83
+  },
+  {
+   "date": "2024-07-12",
+   "price": 53.21
+  },
+  {
+   "date": "2024-07-19",
+   "price": 53.58
+  },
+  {
+   "date": "2024-07-26",
+   "price": 50.58
+  },
+  {
+   "date": "2024-08-02",
+   "price": 52.42
+  },
+  {
+   "date": "2024-08-09",
+   "price": 53.45
+  },
+  {
+   "date": "2024-08-16",
+   "price": 53.17
+  },
+  {
+   "date": "2024-08-23",
+   "price": 60.08
+  },
+  {
+   "date": "2024-08-30",
+   "price": 61.33
+  },
+  {
+   "date": "2024-09-06",
+   "price": 61.83
+  },
+  {
+   "date": "2024-09-13",
+   "price": 61.49
+  },
+  {
+   "date": "2024-09-20",
+   "price": 61.5
+  },
+  {
+   "date": "2024-09-27",
+   "price": 62.23
+  },
+  {
+   "date": "2024-10-04",
+   "price": 63.1
+  },
+  {
+   "date": "2024-10-11",
+   "price": 62.63
+  },
+  {
+   "date": "2024-10-18",
+   "price": 63.13
+  },
+  {
+   "date": "2024-10-25",
+   "price": 62.93
+  },
+  {
+   "date": "2024-11-01",
+   "price": 63.24
+  },
+  {
+   "date": "2024-11-08",
+   "price": 63.77
+  },
+  {
+   "date": "2024-11-15",
+   "price": 63.78
+  },
+  {
+   "date": "2024-11-22",
+   "price": 63.9
+  },
+  {
+   "date": "2024-11-29",
+   "price": 64.02
+  },
+  {
+   "date": "2024-12-06",
+   "price": 63.12
+  },
+  {
+   "date": "2024-12-13",
+   "price": 62.67
+  },
+  {
+   "date": "2024-12-20",
+   "price": 61.36
+  },
+  {
+   "date": "2024-12-27",
+   "price": 61.36
+  },
+  {
+   "date": "2025-01-03",
+   "price": 61.36
+  },
+  {
+   "date": "2025-01-10",
+   "price": 61.36
+  },
+  {
+   "date": "2025-01-17",
+   "price": 61.36
+  },
+  {
+   "date": "2025-01-24",
+   "price": 64.73
+  },
+  {
+   "date": "2025-01-31",
+   "price": 63.68
+  },
+  {
+   "date": "2025-02-07",
+   "price": 63.5
+  },
+  {
+   "date": "2025-02-14",
+   "price": 63.1
+  },
+  {
+   "date": "2025-02-21",
+   "price": 62.66
+  },
+  {
+   "date": "2025-02-28",
+   "price": 63.23
+  },
+  {
+   "date": "2025-03-07",
+   "price": 62.2
+  },
+  {
+   "date": "2025-03-14",
+   "price": 60.83
+  },
+  {
+   "date": "2025-03-21",
+   "price": 59.5
+  },
+  {
+   "date": "2025-03-28",
+   "price": 58.75
+  },
+  {
+   "date": "2025-04-04",
+   "price": 55.0
+  },
+  {
+   "date": "2025-04-11",
+   "price": 54.5
+  },
+  {
+   "date": "2025-04-18",
+   "price": 50.0
+  },
+  {
+   "date": "2025-04-25",
+   "price": 51.5
+  },
+  {
+   "date": "2025-05-02",
+   "price": 50.25
+  },
+  {
+   "date": "2025-05-09",
+   "price": 49.0
+  },
+  {
+   "date": "2025-05-16",
+   "price": 55.0
+  },
+  {
+   "date": "2025-05-23",
+   "price": 55.7
+  },
+  {
+   "date": "2025-05-30",
+   "price": 54.75
+  },
+  {
+   "date": "2025-06-06",
+   "price": 55.0
+  },
+  {
+   "date": "2025-06-13",
+   "price": 56.76
+  },
+  {
+   "date": "2025-06-20",
+   "price": 57.5
+  },
+  {
+   "date": "2025-06-27",
+   "price": 59.0
+  },
+  {
+   "date": "2025-07-04",
+   "price": 57.0
+  },
+  {
+   "date": "2025-07-11",
+   "price": 57.5
+  },
+  {
+   "date": "2025-07-18",
+   "price": 58.0
+  },
+  {
+   "date": "2025-07-25",
+   "price": 56.7
+  },
+  {
+   "date": "2025-08-01",
+   "price": 56.5
+  },
+  {
+   "date": "2025-08-08",
+   "price": 57.0
+  },
+  {
+   "date": "2025-08-15",
+   "price": 56.5
+  },
+  {
+   "date": "2025-08-22",
+   "price": 56.25
+  },
+  {
+   "date": "2025-08-29",
+   "price": 57.0
+  },
+  {
+   "date": "2025-09-05",
+   "price": 57.5
+  },
+  {
+   "date": "2025-09-12",
+   "price": 58.0
+  },
+  {
+   "date": "2025-09-19",
+   "price": 57.26
+  },
+  {
+   "date": "2025-09-26",
+   "price": 57.02
+  },
+  {
+   "date": "2025-10-03",
+   "price": 56.73
+  },
+  {
+   "date": "2025-10-10",
+   "price": 55.5
+  },
+  {
+   "date": "2025-10-17",
+   "price": 55.9
+  },
+  {
+   "date": "2025-10-24",
+   "price": 55.4
+  },
+  {
+   "date": "2025-10-31",
+   "price": 52.9
+  },
+  {
+   "date": "2025-11-07",
+   "price": 43.75
+  },
+  {
+   "date": "2025-11-14",
+   "price": 43.38
+  },
+  {
+   "date": "2025-11-21",
+   "price": 43.75
+  },
+  {
+   "date": "2025-11-28",
+   "price": 38.5
+  },
+  {
+   "date": "2025-12-05",
+   "price": 41.5
+  },
+  {
+   "date": "2025-12-12",
+   "price": 39.55
+  },
+  {
+   "date": "2025-12-19",
+   "price": 40.0
+  },
+  {
+   "date": "2025-12-26",
+   "price": 40.0
+  },
+  {
+   "date": "2026-01-02",
+   "price": 40.0
+  },
+  {
+   "date": "2026-01-09",
+   "price": 37.15
+  },
+  {
+   "date": "2026-01-16",
+   "price": 33.2
+  },
+  {
+   "date": "2026-01-23",
+   "price": 34.55
+  },
+  {
+   "date": "2026-01-30",
+   "price": 35.0
+  },
+  {
+   "date": "2026-02-06",
+   "price": 37.75
+  },
+  {
+   "date": "2026-02-13",
+   "price": 44.0
+  },
+  {
+   "date": "2026-02-20",
+   "price": 44.55
+  },
+  {
+   "date": "2026-02-27",
+   "price": 47.5
+  },
+  {
+   "date": "2026-03-06",
+   "price": 44.3
+  },
+  {
+   "date": "2026-03-13",
+   "price": 43.75
+  },
+  {
+   "date": "2026-03-20",
+   "price": 40.0
+  },
+  {
+   "date": "2026-03-27",
+   "price": 41.5
+  },
+  {
+   "date": "2026-04-03",
+   "price": 41.5
+  },
+  {
+   "date": "2026-04-10",
+   "price": 45.0
+  },
+  {
+   "date": "2026-04-17",
+   "price": 46.5
+  },
+  {
+   "date": "2026-04-24",
+   "price": 50.0
+  },
+  {
+   "date": "2026-05-01",
+   "price": 51.0
+  },
+  {
+   "date": "2026-05-08",
+   "price": 52.0
+  },
+  {
+   "date": "2026-05-15",
+   "price": 51.25
+  },
+  {
+   "date": "2026-05-22",
+   "price": 52.0
+  },
+  {
+   "date": "2026-05-29",
+   "price": 50.5
+  },
+  {
+   "date": "2026-06-05",
+   "price": 50.0
+  },
+  {
+   "date": "2026-06-12",
+   "price": 53.0
+  },
+  {
+   "date": "2026-06-19",
+   "price": 54.0
+  },
+  {
+   "date": "2026-06-26",
+   "price": 54.0
+  },
+  {
+   "date": "2026-07-03",
+   "price": 54.0
+  },
+  {
+   "date": "2026-07-10",
+   "price": 54.0
+  },
+  {
+   "date": "2026-07-17",
+   "price": 54.27
+  },
+  {
+   "date": "2026-07-24",
+   "price": 56.0
+  },
+  {
+   "date": "2026-07-31",
+   "price": 55.25
+  },
+  {
+   "date": "2026-08-07",
+   "price": 55.0
+  },
+  {
+   "date": "2026-08-14",
+   "price": 54.77
+  },
+  {
+   "date": "2026-08-21",
+   "price": 53.0
+  },
+  {
+   "date": "2026-08-28",
+   "price": 51.75
+  },
+  {
+   "date": "2026-09-04",
+   "price": 51.0
+  },
+  {
+   "date": "2026-09-11",
+   "price": 49.4
+  },
+  {
+   "date": "2026-09-18",
+   "price": 52.0
+  },
+  {
+   "date": "2026-09-25",
+   "price": 52.0
+  },
+  {
+   "date": "2026-10-02",
+   "price": 52.0
+  },
+  {
+   "date": "2026-10-09",
+   "price": 50.5
+  },
+  {
+   "date": "2026-10-16",
+   "price": 50.0
+  },
+  {
+   "date": "2026-10-23",
+   "price": 50.0
+  },
+  {
+   "date": "2026-10-30",
+   "price": 48.0
+  }
+ ],
+ "track_record": [
+  {
+   "name": "March 2021",
+   "date": "2021-03-17",
+   "floor": 20.0,
+   "price_lead_before": 37.6,
+   "price_day_before": 38.5,
+   "clearing_price": 36.0,
+   "p_clear_lead": 0.5,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "June 2021",
+   "date": "2021-06-23",
+   "floor": 20.0,
+   "price_lead_before": 37.0,
+   "price_day_before": 40.97,
+   "clearing_price": 41.7,
+   "p_clear_lead": 0.667,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "September 2021",
+   "date": "2021-09-01",
+   "floor": 20.0,
+   "price_lead_before": 37.9,
+   "price_day_before": 51.4,
+   "clearing_price": 53.85,
+   "p_clear_lead": 0.667,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "December 2021",
+   "date": "2021-12-01",
+   "floor": 20.0,
+   "price_lead_before": 59.5,
+   "price_day_before": 65.0,
+   "clearing_price": 68.0,
+   "p_clear_lead": 0.8,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "March 2022",
+   "date": "2022-03-16",
+   "floor": 30.0,
+   "price_lead_before": 68.15,
+   "price_day_before": 72.0,
+   "clearing_price": 70.0,
+   "p_clear_lead": 0.833,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "June 2022",
+   "date": "2022-06-15",
+   "floor": 30.0,
+   "price_lead_before": 73.62,
+   "price_day_before": 76.4,
+   "clearing_price": 76.0,
+   "p_clear_lead": 0.857,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "September 2022",
+   "date": "2022-09-07",
+   "floor": 30.0,
+   "price_lead_before": 76.6,
+   "price_day_before": 87.15,
+   "clearing_price": 85.4,
+   "p_clear_lead": 0.857,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "December 2022",
+   "date": "2022-12-07",
+   "floor": 30.0,
+   "price_lead_before": 85.7,
+   "price_day_before": 81.0,
+   "clearing_price": 79.0,
+   "p_clear_lead": 0.889,
+   "cleared": true,
+   "outcome": "Cleared"
+  },
+  {
+   "name": "March 2023",
+   "date": "2023-03-15",
+   "floor": 33.06,
+   "price_lead_before": 75.0,
+   "price_day_before": 65.5,
+   "clearing_price": null,
+   "p_clear_lead": 0.9,
+   "cleared": false,
+   "outcome": "Bids below reserve"
+  },
+  {
+   "name": "June 2023",
+   "date": "2023-06-14",
+   "floor": 33.06,
+   "price_lead_before": 66.75,
+   "price_day_before": 55.0,
+   "clearing_price": null,
+   "p_clear_lead": 0.818,
+   "cleared": false,
+   "outcome": "Bids below reserve"
+  },
+  {
+   "name": "September 2023",
+   "date": "2023-09-06",
+   "floor": 33.06,
+   "price_lead_before": 56.3,
+   "price_day_before": 70.5,
+   "clearing_price": null,
+   "p_clear_lead": 0.816,
+   "cleared": false,
+   "outcome": "Bids below reserve"
+  },
+  {
+   "name": "December 2023",
+   "date": "2023-12-06",
+   "floor": 60.0,
+   "price_lead_before": 71.75,
+   "price_day_before": 75.5,
+   "clearing_price": null,
+   "p_clear_lead": 0.581,
+   "cleared": false,
+   "outcome": "Bids below reserve"
+  },
+  {
+   "name": "March 2024",
+   "date": "2024-03-20",
+   "floor": 64.0,
+   "price_lead_before": 68.7,
+   "price_day_before": 65.2,
+   "clearing_price": 64.0,
+   "p_clear_lead": 0.432,
+   "cleared": true,
+   "outcome": "Partly cleared"
+  },
+  {
+   "name": "June 2024",
+   "date": "2024-06-19",
+   "floor": 64.0,
+   "price_lead_before": 56.25,
+   "price_day_before": 50.0,
+   "clearing_price": null,
+   "p_clear_lead": 0.153,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "September 2024",
+   "date": "2024-09-04",
+   "floor": 64.0,
+   "price_lead_before": 54.0,
+   "price_day_before": 62.08,
+   "clearing_price": null,
+   "p_clear_lead": 0.147,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "December 2024",
+   "date": "2024-12-04",
+   "floor": 64.0,
+   "price_lead_before": 61.83,
+   "price_day_before": 64.03,
+   "clearing_price": 64.0,
+   "p_clear_lead": 0.291,
+   "cleared": true,
+   "outcome": "Partly cleared"
+  },
+  {
+   "name": "March 2025",
+   "date": "2025-03-19",
+   "floor": 68.0,
+   "price_lead_before": 61.36,
+   "price_day_before": 59.4,
+   "clearing_price": null,
+   "p_clear_lead": 0.182,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "June 2025",
+   "date": "2025-06-18",
+   "floor": 68.0,
+   "price_lead_before": 59.5,
+   "price_day_before": 56.5,
+   "clearing_price": null,
+   "p_clear_lead": 0.144,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "September 2025",
+   "date": "2025-09-10",
+   "floor": 68.0,
+   "price_lead_before": 56.76,
+   "price_day_before": 57.5,
+   "clearing_price": null,
+   "p_clear_lead": 0.12,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "December 2025",
+   "date": "2025-12-03",
+   "floor": 68.0,
+   "price_lead_before": 57.5,
+   "price_day_before": 40.7,
+   "clearing_price": null,
+   "p_clear_lead": 0.133,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "March 2026",
+   "date": "2026-03-03",
+   "floor": 71.0,
+   "price_lead_before": 41.5,
+   "price_day_before": 47.0,
+   "clearing_price": null,
+   "p_clear_lead": 0.0,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "June 2026",
+   "date": "2026-06-09",
+   "floor": 71.0,
+   "price_lead_before": 43.75,
+   "price_day_before": 52.0,
+   "clearing_price": null,
+   "p_clear_lead": 0.007,
+   "cleared": false,
+   "outcome": "No valid bids"
+  },
+  {
+   "name": "September 2026",
+   "date": "2026-09-08",
+   "floor": 71.0,
+   "price_lead_before": 53.0,
+   "price_day_before": 50.0,
+   "clearing_price": null,
+   "p_clear_lead": 0.054,
+   "cleared": false,
+   "outcome": "No valid bids"
+  }
+ ],
+ "lead_weeks": 12,
+ "scores": {
+  "model": 0.176,
+  "base_rate": 0.28,
+  "above_floor_rule": 0.188,
+  "n": 23
+ },
+ "sources": {
+  "prices": "github.com/theecanmole/nzu (public domain)",
+  "auctions": "etsauctions.govt.nz notices and results; Climate Change (Auctions, Limits, and Price Controls for Units) Regulations"
+ }
+}

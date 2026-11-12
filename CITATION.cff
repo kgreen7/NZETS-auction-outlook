@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use or adapt this method, its code or its published estimates, please cite it as below."
+type: software
+title: "NZ ETS auction outlook"
+abstract: >-
+  Weekly estimates of the chance that upcoming New Zealand Emissions Trading Scheme (NZ ETS) auctions sell units:
+  the probability the NZU price is at or above the auction floor (from empirical price ranges over the previous three years) multiplied by
+  the historical rate at which auctions above the floor have cleared the reserve price.
+authors:
+  - name: "Kapiti Climate"
+    website: "https://kapiticlimate.com"
+version: "1.0.0"
+date-released: "2026-11-12"
+license: MIT
+repository-code: "https://github.com/kgreen7/NZETS-auction-outlook"
+url: "https://kapiticlimate.com/insights"
+keywords:
+  - "NZ ETS"
+  - "emissions trading"
+  - "carbon price"
+  - "NZU"
+  - "auctions"
+  - "New Zealand"

@@ -1,0 +1,28 @@
+[project]
+name = "auction-outlook"
+version = "1.0.0"
+description = "Chance that upcoming NZ ETS auctions sell units, updated weekly"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "requests",
+]
+
+[dependency-groups]
+test = [
+    "pytest>=9.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/auction_outlook"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
