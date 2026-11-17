@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "model_version": "auction-outlook 1.0 (2026-11-12): 3-year empirical price range x reserve-clearing rate",
- "generated": "2026-11-12",
+ "generated": "2026-11-17",
  "price_as_of": "2026-10-30",
  "latest_price": 48.0,
  "model": {
@@ -1689,7 +1689,7 @@
  "log": [
   {
    "price_as_of": "2026-10-30",
-   "generated": "2026-11-12",
+   "generated": "2026-11-17",
    "auction": "December 2026",
    "auction_date": "2026-12-01",
    "floor": "71.0",
@@ -1700,7 +1700,7 @@
   },
   {
    "price_as_of": "2026-10-30",
-   "generated": "2026-11-12",
+   "generated": "2026-11-17",
    "auction": "March 2027",
    "auction_date": "2027-03-12",
    "floor": "75.0",

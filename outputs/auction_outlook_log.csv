@@ -1,3 +1,3 @@
 price_as_of,generated,auction,auction_date,floor,latest_price,p_above_floor,p_clear,model
-2026-10-30,2026-11-12,December 2026,2026-12-01,71.0,48.0,0.0,0.0,auction-outlook 1.0 (2026-11-12): 3-year empirical price range x reserve-clearing rate
-2026-10-30,2026-11-12,March 2027,2027-03-12,75.0,48.0,0.021,0.014,auction-outlook 1.0 (2026-11-12): 3-year empirical price range x reserve-clearing rate
+2026-10-30,2026-11-17,December 2026,2026-12-01,71.0,48.0,0.0,0.0,auction-outlook 1.0 (2026-11-12): 3-year empirical price range x reserve-clearing rate
+2026-10-30,2026-11-17,March 2027,2027-03-12,75.0,48.0,0.021,0.014,auction-outlook 1.0 (2026-11-12): 3-year empirical price range x reserve-clearing rate
