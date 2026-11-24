@@ -1,16 +1,16 @@
 {
   "source_url": "https://raw.githubusercontent.com/theecanmole/nzu/master/spotprices.csv",
   "licence": "ODC-PDDL (public domain)",
-  "fetched_at_utc": "2026-11-17T02:10:41+00:00",
-  "raw_sha256": "6b2529494d3cb8b8fec837471fd11f2c72d4b05ee6632aaddfa69c1127a2dd49",
+  "fetched_at_utc": "2026-11-24T04:07:26+00:00",
+  "raw_sha256": "340dc0db6713a68b1bc5ad32debc0b4bca434cc22511b764ba7dd20a748980b3",
   "cleaning": {
-    "raw_rows": 2326,
+    "raw_rows": 2333,
     "dropped_unparseable_or_nonpositive": 0,
     "dropped_duplicate_dates": 0,
-    "clean_rows": 2326,
+    "clean_rows": 2333,
     "first_date": "2010-05-14",
-    "last_date": "2026-10-30",
-    "last_price": 48.0,
+    "last_date": "2026-11-13",
+    "last_price": 49.5,
     "weekend_rows": 25,
     "large_moves": 55,
     "large_moves_2018plus": 13,
@@ -18,7 +18,7 @@
   },
   "revisions_vs_previous": {
     "previous_file": true,
-    "rows_added": 0,
+    "rows_added": 7,
     "rows_removed": 0,
     "historical_prices_changed": 0,
     "changed_examples": []
